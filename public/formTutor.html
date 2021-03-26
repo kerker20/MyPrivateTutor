@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MyPrivateTutor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+
+<style>
+.hole {
+  color: #fff;
+  background:
+    url(../src/imgs/form.png);
+  background-size: cover, cover;
+  background-position: center, center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</style>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-4">
+        <a class="navbar-brand" href="../public/index.html" style="margin-left: 110px;"><strong>MyPrivateTutor</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left:auto;">
+                <li class="nav-item active">
+                    <a class="nav-link  text-dark" href="#">Help<span></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">Sign In/Up</a>
+                </li>
+                &nbsp;&nbsp;
+                <li class="nav-item">
+                    <button class="btn btn-outline-success" style="font-size: large;" type="submit">Become a Tutor</button>
+                </li>&nbsp;&nbsp;
+                <li class="nav-item">
+                    <a href="../public/request.html"><button id="btn" class="btn btn-success" style="margin-right: 200px;font-size: large;" type="submit">Request a Tutor</button></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<div class="hole">
+<div class="container">
+<div class="row justify-content-center mt-5">
+     <div class="card" id="form1" style="width: 28rem;margin-top:2%">
+                    <div class="card-body">
+                     <label for="exampleFormControlTextarea1" style="color: black"><h4>SignUp to Become a Tutor</h4></label>
+                     <br>
+                        <div class="input-group mt-4">
+                            <input type="text" class="btn form-control"
+                                style="border-bottom: 1px solid rgb(97, 97, 97);" placeholder="FirstName" />
+                            <span class="input-group-addon">&nbsp;&nbsp;</span>
+                            <input type="text" class="btn form-control"
+                                style="border-bottom: 1px solid rgb(97, 97, 97);" placeholder="LastName" />
+                        </div>
+                        <br><br>
+                        <div class="input-group mt-4">
+                            <input type="text" class="btn form-control"
+                                style="border-bottom: 1px solid rgb(97, 97, 97);" placeholder="Email" />
+                            <span class="input-group-addon">&nbsp;&nbsp;</span>
+                            <input type="text" class="btn form-control"
+                                style="border-bottom: 1px solid rgb(97, 97, 97);" placeholder="Password" />
+                        </div>
+                        <br>
+                         <div class="form-group">
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">
+  Upload Credentials/Certificates
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Qualify Yourself Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="container">
+  <div class="row">
+    <div class="col">
+     <img src="../src/imgs/upload.png" style="width:300px;" class="rounded mx-auto d-block" alt="...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <form action="/action_page.php">
+      <br><br>
+   <label for="img" style="color:black">Select image Credentials/Certificates:</label>
+  <input type="file" class="text-dark" id="img" name="img" accept="image/*">
+  <input type="file" class="text-dark" id="img" name="img" accept="image/*">
+  <input type="file" class="text-dark" id="img" name="img" accept="image/*">
+</form>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary mb-3">Upload</button>
+      </div>
+    </div>
+  </div>
+</div>
+                        </div>
+
+                        <br>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1" style="color: black">Specify your Subject Specialty</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <center><p class="text-muted"><small>Thank you for trusting MyPrivateTutor</small></p></center>
+                        </div>
+                        <div class="form-group">
+                           <center> <button id="btn" class="btn btn-primary btn-lg">Continue</button></center>
+                           <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <nav class="navbar navbar-light p-4" id="foot" style="background-color: rgb(250,235,215);">
+<p class="text-muted"><small>Already have an account? &nbsp; <a href="#" class="text-dark" style="text-decoration:none;">Login</a></small></p>
+</nav>
+
+
+     </body>
+     </html>
